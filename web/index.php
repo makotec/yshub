@@ -30,7 +30,7 @@
 
         var ps = {};
         window.onload = function () {
-  //      alert('here we go');
+    alert('here we go');
         jsGizmo.initPage('white');
             ps.cookiename = 'makotecmoneykey';
    //         ps.UserID = "<?php echo $_SESSION['UserID']; ?>";
