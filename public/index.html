@@ -9,12 +9,12 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -26,37 +26,18 @@
     -->
     <title>React App</title>
   </head>
-  <body id ="webBody">
-    <div id="pnlBody" style="z-index: 1; position: absolute; background: #005151;"></div> 
-</body>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
 
-<script>
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
 
-    window.onload = function () {
-      window.location = _domainRedirect();
-      return true;
-      alert ('Redirect URL : ' + document.URL + ' to ' + _domainRedirect());
-    };
-
-    function _domainRedirect() {
-      locURL =  document.URL;
-      if (locURL.indexOf('//localhost:3000/') > 0) {return 'https://yscomm.win'};
-      if (locURL.indexOf('//yscomm/') > 0) {return 'https://yscomm.win'};
-      if (locURL.indexOf('//smoney.yscomm/') > 0) {return 'https://yscomm.win/smy/go.php'};
-      if (locURL.indexOf('//notebook.yscomm/') > 0)  {return 'https://yscomm.win/notebook/go.php'};
-      if (locURL.indexOf('//nb.yscomm/') > 0) {return 'https://yscomm.win/notebook/go.php'};
-      if (locURL.indexOf('//lifebox.yscomm/') > 0) {return 'https://yscomm.win/lifebox/go.php'};
-      if (locURL.indexOf('//lb.yscomm/') > 0) {return 'https://yscomm.win/lifebox/go.php'};
-      if (locURL.indexOf('//health.yscomm/') > 0) {return 'https://yscomm.win/myhealth/go.php'};
-      if (locURL.indexOf('//makotec.yscomm/') > 0) {return 'https://yscomm.win/site/go.php'};
-      if (locURL.indexOf('//hub.yscomm/') > 0) {return 'https://yscomm.win/site/go.php'};
-
-      if (locURL.indexOf('//lime.punkscomic2/') > 0) {return 'https://yscomm.win/site/go.php'};
-      if (locURL.indexOf('//nut.punkscomic2/') > 0) {return 'https://yscomm.win/site/go.php'};
-
-      return true;
-    }
-    
-
-  </script>
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
